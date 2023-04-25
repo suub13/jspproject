@@ -12,6 +12,7 @@ public class DBUtil {
         String user = context.getInitParameter("DB_USER");
         String password = context.getInitParameter("DB_PASSWORD");
 
+
         // JDBC Driver 로딩
         try{
             Class.forName("org.mariadb.jdbc.Driver");

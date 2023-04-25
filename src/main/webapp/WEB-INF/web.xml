@@ -21,8 +21,11 @@
   <description>
     Welcome to Tomcat
   </description>
-  <listener>
-    <listener-class>com.playdata.listener.DBContextListener</listener-class>
-  </listener>
-
+<!--  <listener>-->
+<!--    <listener-class>com.playdata.listener.DBContextListener</listener-class>-->
+<!--  </listener>-->
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
 </web-app>
